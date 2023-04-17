@@ -1,0 +1,28 @@
+//该文件是让vscode能智能提示
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      // 配置自定义的别名匹配路径
+      "css/*": [
+        "/src/assets/css*"
+      ],
+      "components/*":["/src/components"],
+      "utils":["/src/utils"],
+      "views":["/src/views"],
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
